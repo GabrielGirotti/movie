@@ -1,0 +1,41 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;    
+    padding: 20px;
+    z-index: 1;
+ 
+}
+
+.navbar.active{
+    background: radial-gradient(circle, rgba(18,25,85,1) 0%, rgba(0,0,0,1) 100%);
+    color: white;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.39);
+}
+
+.navbar__logo{
+    width: 80px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+.navbar__link ul{
+    font-size: 1rem;
+    display: flex;
+
+    font-weight: 700;
+}
+
+.navbar__link li{
+    list-style: none;
+    padding: 1rem;
+    display: block;
+    transition: transform 450ms;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+.navbar__link li:hover{
+    color: rgba(252, 240, 45, 1);
+    transform: scale(1.03);
+}
