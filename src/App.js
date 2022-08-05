@@ -7,18 +7,37 @@ import Navbar from './Navbar';
 
 
 
+
+
+
+
 function App() {
   return (
     <div className="app">
       
       <Navbar />
-      <Banner  />
 
+      <Banner  />
+      <div id='originals'></div>
+      <br></br>
+      <br></br>
+      <br></br>
       <Row title="Originals" fetchUrl={requests.fetchNetflixOriginals} 
       isLargeRow
       />
-      <Row title="Trending"  fetchUrl={requests.fetchTrending} isLargeRow />
+      <div id='trending'></div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Row title="Trending" fetchUrl={requests.fetchTrending} isLargeRow />
+      <div id='toprate'></div>
+      <br></br>
+      <br></br>
+      <br></br>
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} isLargeRow />
+      <br></br>
+      <br></br>
+      <br></br>
       <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
       <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
