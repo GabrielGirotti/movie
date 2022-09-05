@@ -6,8 +6,7 @@ import Banner from './Banner';
 import Navbar from './Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Results from './Results';
-import Search from './Search';
+
 
 
 
@@ -17,20 +16,22 @@ function App() {
       
       <Router>
 
-      <Navbar />     
-      
+      <Navbar />
+
+      <Routes>        
+        <Route path='/originals' element={<originals />} exact>          
+        </Route>
+        <Route path='/trending' element={<trending />} exact>          
+        </Route>
+        <Route path='/toprate' element={<toprate />} exact>          
+        </Route>
+        <Route path='/mylist' element={<mylist />} exact>          
+        </Route>
+      </Routes>
 
       </Router>
       
       <Banner  />
-
-      <Router>
-      <Search />
-      <Routes>        
-        <Route path='/results' element={<Results />} exact></Route>   
-        </Routes>
-        </Router>
-      
       <div id='originals'></div>
       <br></br>
       <br></br>
@@ -56,8 +57,6 @@ function App() {
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
       <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
       <Row title="Documentaries" fetchUrl={requests.fetchDocumantaries} />
-
-      
 
 
       
