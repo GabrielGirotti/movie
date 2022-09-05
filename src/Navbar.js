@@ -3,6 +3,7 @@ import './Navbar.css';
 import { HashLink as Link1 } from 'react-router-hash-link';
 
 
+
 function Navbar() {
     const [navbar, setNavbar] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
@@ -32,7 +33,6 @@ function Navbar() {
        
 
     
-
 
 
         

@@ -48,6 +48,13 @@ function Row({ title, fetchUrl, isLargeRow }) {
     console.log(movies);
 
     return (
+
+
+
+
+
+
+
     <div className='row'>
         <h2 className="row__title">{title}</h2>
         
@@ -63,7 +70,10 @@ function Row({ title, fetchUrl, isLargeRow }) {
         </div>
                {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
     </div>
+
+
+   
   )
 }
 
-export default Row
+export default Row;

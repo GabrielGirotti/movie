@@ -75,7 +75,7 @@ html {
     
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 912px) {
 
     
 
@@ -135,7 +135,7 @@ html {
         background-color: transparent;
         border: none;
         outline: none;
-        top: 15px;
+        top: 25px;
         right: 25px;
     }
 }
